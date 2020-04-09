@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>Cse383 Lab 9</title>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"               integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="               crossorigin="anonymous"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <!-- Latest compiled JavaScript 
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> -->
+        <script src="book.js?rev=2"></script>
+    </head>
+    
+    <body>        
+            <nav class="navbar navbar-dark bg-dark">
+                <span class="navbar-brand mb-0 h1">Looky Looky at my Booky</span>
+            </nav>
+        
+        <!--Beginning of Serach Form-->
+
+            
+                <div class="container" style="padding-top: 2rem">
+                    
+                     <div class="row">
+                         <div class="col">
+                            <label for="bookSearchBar" class="col-form-label col-form-label-lg">Book Search</label>  
+                            </div>
+                        </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                           <input class="form-control mr-sm-2" type="search" placeholder="Book Title" aria-label="Search" id="bookSearchBar" name="bookSearchBar" />
+                        </div>
+                        <div class="col">
+                           <button class="btn btn-outline-dark" id ="searchButton" name="searchButton" onclick="getBookTitle()">Search</button> <!--Should call AJAx function-->
+                        </div>
+                    </div>      
+                   
+                </div>
+                   
+       
+            
+            <div class = "container results" style="padding-top: 2rem">
+                <div class="row">
+                
+                    <div class="col">
+                             <div class="card" style="width: 50rem;">
+                                  <div class="card-header">
+                                    Results
+                                  </div>
+                                  <ul class="list-group list-group-flush" id="book_list">
+
+                                  </ul>
+                            </div>  
+                    </div>
+                    
+                    <div class="col">
+                        
+                              <div id = "cover_image" style="width: 200px; height: 500px; border-style: solid; thick; border-color: skyblue; text-align: center; position: fixed;">
+                 
+                                 
+
+                            </div>
+                        
+                    </div>
+                </div>
+                
+                 
+               
+            </div>
+
+        
+
+      <footer>
+    </footer>
+        
+    </body>
+    
+    
+</html>
